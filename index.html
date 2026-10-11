@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Notes</h1>
+  <p class="sub">Write a note, keep it, delete it when you're done.</p>
+
+  <form id="form">
+    <input id="title" type="text" placeholder="Title" maxlength="120" autocomplete="off" aria-label="Note title">
+    <textarea id="body" placeholder="Write your note here" aria-label="Note text"></textarea>
+    <div class="row">
+      <span class="hint" id="err" role="alert"></span>
+      <button class="save" type="submit">Save note</button>
+    </div>
+  </form>
+
+  <div class="listhead">
+    <h2>Saved notes</h2>
+    <span class="count" id="count"></span>
+  </div>
+  <ul id="list"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
